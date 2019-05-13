@@ -1,2 +1,2 @@
 # Quicknotes-React
-Simple quick notes solution made in react.
+Simple quick notes solution made with react.
