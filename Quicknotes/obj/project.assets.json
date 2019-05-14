@@ -12078,11 +12078,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zack\\source\\repos\\Quicknotes\\Quicknotes\\Quicknotes.csproj",
+      "projectUniqueName": "C:\\Users\\Zack\\source\\repos\\Quicknotes-React\\Quicknotes\\Quicknotes.csproj",
       "projectName": "Quicknotes",
-      "projectPath": "C:\\Users\\Zack\\source\\repos\\Quicknotes\\Quicknotes\\Quicknotes.csproj",
+      "projectPath": "C:\\Users\\Zack\\source\\repos\\Quicknotes-React\\Quicknotes\\Quicknotes.csproj",
       "packagesPath": "C:\\Users\\Zack\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zack\\source\\repos\\Quicknotes\\Quicknotes\\obj\\",
+      "outputPath": "C:\\Users\\Zack\\source\\repos\\Quicknotes-React\\Quicknotes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
