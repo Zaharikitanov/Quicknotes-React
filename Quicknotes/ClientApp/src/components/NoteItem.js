@@ -13,13 +13,13 @@ export default class NoteItem extends Component {
     }
 
     render() {
-        const { id, title } = this.props.note;
+        const { Id, Text } = this.props.note;
 
         return (
             <div className={'note ' + this.getStyle()}>
-                <input type="checkbox" onChange={this.props.markComplete.bind(this, id)} checked={this.completedNote()}/> {' '}
-                {title}
-                <button onClick={this.props.deleteNote.bind(this, id)} className="deleteNote">x</button> 
+                <input type="checkbox" onChange={this.props.markComplete.bind(this, Id)} checked={this.completedNote()}/> {' '}
+                {Text}
+                <button onClick={this.props.deleteNote.bind(this, Id)} className="deleteNote">x</button> 
             </div> 
             )
     }

@@ -14,34 +14,36 @@ export default class App extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
-            .then(res => this.setState({ notes: res.data }));
+        //axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')        
+        axios.get('https://localhost:44307/api/data')
+            .then(res => this.setState({ notes: res.data.Notes }));
     }
 
-    markComplete = (id) => {
+    markComplete = (Id) => {
         this.setState({
             notes: this.state.notes.map(note => {
-                if (note.id === id) {
-                    note.completed = !note.completed
+                if (note.Id === Id) {
+                    note.IsCompleted = !note.IsCompleted
                 }
                 return note;
             })
         });
     }
 
-    deleteNote = (id) => {
-        axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
-            .then(res => this.setState({ notes: [...this.state.notes.filter(note => note.id !== id)] }));
+    deleteNote = (Id) => {
+        //axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
+        axios.delete(`https://jsonplaceholder.typicode.com/todos/${Id}`)
+            .then(res => this.setState({ notes: [...this.state.notes.filter(note => note.Id !== Id)] }));
 
         
     }
 
-    addNote = (title) => {
-        axios.post("https://jsonplaceholder.typicode.com/todos", {
-            title,
-            completed: false
+    addNote = (Text) => {
+        axios.post("https://localhost:44307/api/data", {
+            Text,
+            IsCompleted: false
         })
-            .then(res => this.setState({notes: [...this.state.notes, res.data]}));
+            .then(res => this.setState({notes: [...this.state.notes, res.data.Notes]}));
     }
 
   render () {

@@ -7,7 +7,7 @@ export default class Notes extends Component {
 
     render() {
         return this.props.notes.map((note) => (
-            <NoteItem key={note.id} note={note} markComplete={this.props.markComplete}
+            <NoteItem key={note.Id} note={note} markComplete={this.props.markComplete}
                 deleteNote={this.props.deleteNote} />
         ))
     }
