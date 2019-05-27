@@ -4,11 +4,20 @@ import Header from './components/layout/header';
 import Notes from './components/Notes';
 import AddNote from './components/AddNote';
 import About from './components/pages/About';
-import './styles/app.css';
+import './styles/app.min.css';
 import axios from 'axios';
+
+let axiosConfig = {
+    headers: {
+        'Content-Type': 'application/json;charset=UTF-8',
+        "Access-Control-Allow-Origin": "*",
+    }
+};
 
 export default class App extends Component {
     static displayName = App.name;
+    
+
     state = {
         notes: []
     }
@@ -40,9 +49,10 @@ export default class App extends Component {
 
     addNote = (Text) => {
         axios.post("https://localhost:44307/api/data", {
+            Id: 4,
             Text,
             IsCompleted: false
-        })
+        }, axiosConfig)
             .then(res => this.setState({notes: [...this.state.notes, res.data.Notes]}));
     }
 

@@ -1,0 +1,78 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.4;
+
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .note {
+        background: #f4f4f4;
+        padding: 10px;
+        border-bottom: 1px #ccc solid;
+
+        &.isCompleted {
+            text-decoration: line-through;
+        }
+
+        &.notCompleted {
+            text-decoration: none;
+        }
+
+        .deleteNote {
+            background: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 5px 9px;
+            margin-top: -5px;
+            border-radius: 50%;
+            cursor: pointer;
+            float: right;
+        }
+    }
+
+    .addNote {
+        display: flex;
+
+        .addBtn {
+            flex: 1;
+            display: inline-block;
+            border: none;
+            background: #555;
+            color: #fff;
+            padding: 7px 20px;
+            cursor: pointer;
+
+            &:hover {
+                background: #666;
+            }
+        }
+
+        input[name="noteText"] {
+            flex: 10;
+            padding: 5px;
+        }
+    }
+
+    .container {
+        padding: 0 1rem;
+
+        .header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}

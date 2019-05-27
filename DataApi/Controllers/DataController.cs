@@ -2,6 +2,7 @@
 using DataApi.Services;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace DataApi.Controllers
 {
@@ -26,6 +27,7 @@ namespace DataApi.Controllers
         }
 
         // POST: api/Data
+        [EnableCors(origins: "https://localhost:44343/api/data", headers: "application/json", methods: "POST")]
         public void Post(Note note)
         {
             _dataService.AddNewRecord(note);
