@@ -22,7 +22,6 @@ bld/
 [Oo]bj/
 [Ll]og/
 
-DataApi/bin/*
 /**/bin/**/*
 /./**/bin/**/*
 ./**/bin/**/*
