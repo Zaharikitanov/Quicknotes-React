@@ -5,6 +5,7 @@ C:\Users\Zack\source\repos\Quicknotes-React\Quicknotes\bin\Debug\netcoreapp2.2\Q
 C:\Users\Zack\source\repos\Quicknotes-React\Quicknotes\bin\Debug\netcoreapp2.2\Quicknotes.pdb
 C:\Users\Zack\source\repos\Quicknotes-React\Quicknotes\bin\Debug\netcoreapp2.2\Quicknotes.Views.dll
 C:\Users\Zack\source\repos\Quicknotes-React\Quicknotes\bin\Debug\netcoreapp2.2\Quicknotes.Views.pdb
+C:\Users\Zack\source\repos\Quicknotes-React\Quicknotes\obj\Debug\netcoreapp2.2\Quicknotes.csprojAssemblyReference.cache
 C:\Users\Zack\source\repos\Quicknotes-React\Quicknotes\obj\Debug\netcoreapp2.2\Quicknotes.csproj.CoreCompileInputs.cache
 C:\Users\Zack\source\repos\Quicknotes-React\Quicknotes\obj\Debug\netcoreapp2.2\Quicknotes.RazorAssemblyInfo.cache
 C:\Users\Zack\source\repos\Quicknotes-React\Quicknotes\obj\Debug\netcoreapp2.2\Quicknotes.RazorAssemblyInfo.cs
