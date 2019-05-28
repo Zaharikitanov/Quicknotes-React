@@ -26,10 +26,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\src\styles\app.css" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="compilerconfig.json" />
   </ItemGroup>
 

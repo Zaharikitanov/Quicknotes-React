@@ -4,7 +4,7 @@ import Header from './components/layout/header';
 import Notes from './components/Notes';
 import AddNote from './components/AddNote';
 import About from './components/pages/About';
-import './styles/app.min.css';
+import './styles/app.css';
 import axios from 'axios';
 
 let axiosConfig = {
