@@ -11,7 +11,7 @@ namespace DataApi.Services
     {
         private string _filePath = HttpContext.Current.Server.MapPath("/Data/quickNotes.json");
 
-        public NotesList LoadData()
+        public NotesList LoadRecords()
         {
             return ReadData();
         }
@@ -22,7 +22,7 @@ namespace DataApi.Services
             var notes = notesList.Notes;
 
             notes.Remove(notes.Single(x => x.Id == id));
-            File.WriteAllText(_filePath, new JavaScriptSerializer().Serialize(notesList));
+            SaveData(notesList);
         }
 
         public void AddNewRecord(Note note)
@@ -31,7 +31,7 @@ namespace DataApi.Services
             
             note.Id = Guid.NewGuid().ToString();
             notesList.Notes.Add(note);
-            File.WriteAllText(_filePath, new JavaScriptSerializer().Serialize(notesList));
+            SaveData(notesList);
         }
 
         private NotesList ReadData()
@@ -42,6 +42,11 @@ namespace DataApi.Services
                 var items = Newtonsoft.Json.JsonConvert.DeserializeObject<NotesList>(json);
                 return items;
             }
+        }
+
+        private void SaveData(NotesList notesList)
+        {
+            File.WriteAllText(_filePath, new JavaScriptSerializer().Serialize(notesList));
         }
     }
 }

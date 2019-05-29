@@ -17,13 +17,13 @@ namespace DataApi.Controllers
         // GET: api/Data
         public NotesList Get()
         {
-            return _dataService.LoadData();
+            return _dataService.LoadRecords();
         }
 
         // GET: api/Data/5
         public Note Get(string id)
         {
-            return _dataService.LoadData().Notes.Where(x => x.Id == id).FirstOrDefault();
+            return _dataService.LoadRecords().Notes.Where(x => x.Id == id).FirstOrDefault();
         }
 
         // POST: api/Data

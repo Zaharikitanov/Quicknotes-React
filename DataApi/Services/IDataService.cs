@@ -6,7 +6,7 @@ namespace DataApi.Services
 {
     public interface IDataService
     {
-        NotesList LoadData();
+        NotesList LoadRecords();
 
         void AddNewRecord(Note note);
 
