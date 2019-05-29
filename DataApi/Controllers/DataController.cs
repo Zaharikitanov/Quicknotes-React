@@ -38,8 +38,9 @@ namespace DataApi.Controllers
         }
 
         // DELETE: api/Data/5
-        public void Delete(int id)
+        public void Delete(string id)
         {
+            _dataService.DeleteRecord(id);
         }
     }
 }

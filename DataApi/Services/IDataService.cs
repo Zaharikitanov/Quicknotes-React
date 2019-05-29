@@ -9,5 +9,7 @@ namespace DataApi.Services
         NotesList LoadData();
 
         void AddNewRecord(Note note);
+
+        void DeleteRecord(string id);
     }
 }

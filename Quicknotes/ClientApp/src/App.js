@@ -41,10 +41,8 @@ export default class App extends Component {
 
     deleteNote = (Id) => {
         //axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
-        axios.delete(`https://jsonplaceholder.typicode.com/todos/${Id}`)
+        axios.delete(`https://localhost:44307/api/data/${Id}`)
             .then(res => this.setState({ notes: [...this.state.notes.filter(note => note.Id !== Id)] }));
-
-        
     }
 
     addNote = (Text) => {
