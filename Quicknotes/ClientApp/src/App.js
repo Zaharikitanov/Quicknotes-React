@@ -49,7 +49,6 @@ export default class App extends Component {
 
     addNote = (Text) => {
         axios.post("https://localhost:44307/api/data", {
-            Id: 4,
             Text,
             IsCompleted: false
         }, axiosConfig)

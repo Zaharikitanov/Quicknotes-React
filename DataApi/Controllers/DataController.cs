@@ -21,13 +21,12 @@ namespace DataApi.Controllers
         }
 
         // GET: api/Data/5
-        public Note Get(int id)
+        public Note Get(string id)
         {
             return _dataService.LoadData().Notes.Where(x => x.Id == id).FirstOrDefault();
         }
 
         // POST: api/Data
-        [EnableCors(origins: "https://localhost:44343/api/data", headers: "application/json", methods: "POST")]
         public void Post(Note note)
         {
             _dataService.AddNewRecord(note);
